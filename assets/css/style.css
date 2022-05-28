@@ -1,0 +1,187 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+  list-style-type: none;
+  font-family: Georgia, "Times New Roman", Times, serif; }
+
+html {
+  font-size: 16px; }
+
+body {
+  padding: auto; }
+
+.header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 0px 0px 2px lightgray;
+  border: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+  .header__logo {
+    margin-left: 32px;
+    flex-basis: 0.5;
+    width: 100%;
+    letter-spacing: 4.8px; }
+  .header__navv {
+    display: flex;
+    flex-basis: 0.5;
+    align-items: center;
+    justify-content: end;
+    width: 100%;
+    height: 100%;
+    align-content: center; }
+    @media only screen and (max-width: 630px) {
+      .header__navv {
+        display: none; } }
+    .header__navv__ul {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 80%; }
+      .header__navv__ul__li {
+        margin-right: 16px;
+        letter-spacing: 3.2px;
+        cursor: pointer;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding-left: 16px;
+        padding-right: 16px; }
+      .header__navv__ul__li:hover {
+        background-color: lightgray; }
+
+.banner {
+  width: 100%;
+  height: 100vh;
+  position: relative; }
+  .banner__img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%; }
+  .banner__title {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: rgba(47, 46, 46, 0.6);
+    font-size: 36px;
+    letter-spacing: 1.6px; }
+  @media only screen and (max-width: 630px) {
+    .banner {
+      width: 630px;
+      height: 50vh;
+      position: relative; } }
+
+.about {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 80px 0;
+  width: 90%;
+  max-width: 1100px; }
+  @media only screen and (max-width: 630px) {
+    .about {
+      width: 90%; } }
+  .about__left {
+    width: 50%; }
+    .about__left__img {
+      width: 100%;
+      max-height: 100%;
+      opacity: 0.7; }
+    @media only screen and (max-width: 630px) {
+      .about__left {
+        display: none; } }
+  .about__right {
+    text-align: center;
+    width: 45%;
+    padding-top: 50px;
+    margin-left: 32px; }
+    @media only screen and (max-width: 630px) {
+      .about__right {
+        text-align: center;
+        width: 80%; } }
+    .about__right__title {
+      letter-spacing: 16px;
+      text-align: center;
+      height: 70px;
+      font-size: 28.8px; }
+      .about__right__title__sub {
+        letter-spacing: 6.4px;
+        text-align: center;
+        height: 40px; }
+      .about__right__title__para {
+        font-size: 12.8px;
+        line-height: 25.6px; }
+        .about__right__title__para__sub {
+          color: rgba(0, 0, 0, 0.6); }
+          @media only screen and (max-width: 630px) {
+            .about__right__title__para__sub {
+              display: block; } }
+
+.about__right {
+  margin-right: 32px; }
+  .about__right__menu__menus {
+    line-height: 32px;
+    margin-bottom: 50px; }
+    .about__right__menu__menus__name {
+      letter-spacing: 4.8px;
+      font-size: 19.2px; }
+      .about__right__menu__menus__name__desc {
+        color: rgba(0, 0, 0, 0.6); }
+
+.contact {
+  padding: 80px 0;
+  width: 90%;
+  max-width: 1000px;
+  margin: auto; }
+  .contact__title {
+    height: 48px;
+    letter-spacing: 4.8px;
+    font-size: 24px; }
+  .contact h5 {
+    margin: 16px 0;
+    font-weight: bold;
+    color: #2a454e;
+    font-size: 17.6px; }
+  .contact .class-p {
+    font-size: 12.8px; }
+  .contact__form {
+    margin-top: 16px; }
+    .contact__form__contact__title__input {
+      width: 100%;
+      outline: none;
+      border: none;
+      border-bottom: 2 px solid rgba(0, 0, 0, 0.2);
+      padding: 20px 6px;
+      margin-bottom: 5px; }
+    .contact__form__contact__title__submit {
+      outline: none;
+      border: none;
+      background-color: lightgray;
+      padding: 16px;
+      margin-top: 10px; }
+
+footer {
+  width: 100%;
+  height: 150px;
+  background-color: lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  footer p {
+    font-size: 12.8;
+    line-height: 112px; }
+    footer p a {
+      color: black;
+      text-decoration: underline; }
+    footer p a:hover {
+      color: red; }
+  @media only screen and (max-width: 630px) {
+    footer {
+      max-width: 630px; } }

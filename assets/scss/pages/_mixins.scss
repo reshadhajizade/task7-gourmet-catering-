@@ -1,0 +1,5 @@
+@mixin mobileversion {
+  @media only screen and(max-width:630px) {
+    @content;
+  }
+}
